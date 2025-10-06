@@ -1,108 +1,84 @@
-# 📊 Trade Signal Generator CLI
-A modular C++ tool to generate Buy/Sell signals from market price data using strategy logic.
+# 🧠 Mini Tick Database Simulator
 
-## 🚀 Features
-- ✅ Parse time-series price feed
-- 📈 Apply technical strategies (e.g., Moving Average Crossover)
-- 🔔 Generate Buy/Sell signals
-- 📊 Report signal accuracy and stats
-- 🧱 Modular design for easy strategy extension
-
-## 🧩 Modules Overview
-
-| Module | Role |
-|--------|------|
-| `PriceFeedParser` | Parses timestamped price data |
-| `StrategyEngine` | Applies trading logic (e.g., MA crossover) |
-| `SignalGenerator` | Generates actionable Buy/Sell signals |
-| `SignalMetrics` | Calculates accuracy, win ratio, etc. |
-| `CLIOutput` | Displays results in dry-run style |
-
-## 📂 Folder Structure
-TradeSignalGenerator/
-
-├── main.cpp
-
-├── price_parser.h
-
-├── price_parser.cpp
-
-├── strategy_engine.h
-
-├── strategy_engine.cpp
-
-├── signal_generator.h
-
-├── signal_generator.cpp
-
-├── metrics.h
-
-├── metrics.cpp
-
-├── sample_feed.txt
-
-├── README.md ✅
-
-
-
-## 📥 Input Format
-
-2025-10-05 14:15:00, 150.25
-
-2025-10-05 14:16:00, 151.00 
-
-...
-## 📤 Sample Output
-
-[BUY] 2025-10-05 14:16:00 @ ₹151.00
-
-[SELL] 2025-10-05 14:45:00 @ ₹153.50
-
-Total Signals: 12 
-
-Accuracy: 75% 
-
-Win Ratio: 3:1
-
-## 🛠️ How to Run
-
-```bash
-g++ main.cpp price_parser.cpp strategy_engine.cpp signal_generator.cpp metrics.cpp -o signalgen
-./signalgen < price_feed.txt
+A beginner-friendly C++ project that simulates how exchanges store and analyze market data in real time. This system captures ticks with timestamp, filters by symbol and event type, and generates summaries — just like real infra-grade systems.
 
 ---
 
-### 8. **Strategy Logic**
-```md
-## 📚 Strategy Logic (Default)
+## 📌 Project Overview
 
-**Moving Average Crossover:**
-- Short MA > Long MA → BUY
-- Short MA < Long MA → SELL
+This project is inspired by real-world trading infrastructure. It mimics a **tick database** — a system that stores every market event like orders, trades, and cancellations. Each tick includes:
 
-You can plug in your own strategy by editing `StrategyEngine`.
+- Symbol (e.g., TCS, INFY)
+- Quantity
+- Price
+- Event Type (ORDER / TRADE / CANCEL)
+- Timestamp (formatted to milliseconds)
 
-## 🧠 Why This Project?
+---
 
-- Learn modular design in C++
-- Build real-world signal logic
-- Showcase strategy thinking + CLI polish
-- Perfect for resume, LinkedIn, and mentor demos
+## 📅 Day-wise Breakdown
 
-## 🧱 Built With
+| Day | Module | Description |
+|-----|--------|-------------|
+| Day 1 | Tick Struct + Timestamp | Tick data structure with formatted time |
+| Day 2 | Input + Storage | User se tick input lena and vector mein store karna |
+| Day 3 | Filter by Symbol | Specific symbol ke ticks dikhana |
+| Day 4 | Filter by Event Type | ORDER / TRADE / CANCEL ke hisaab se filter karna |
+| Day 5 | Event Summary | Total ORDER, TRADE, CANCEL count |
+| Day 6 | Highest Trade per Symbol | Har symbol ka highest price trade dikhana |
+| Day 7 | Latest Tick per Symbol | Har symbol ka latest tick timestamp ke basis pe dikhana |
 
-- C++ STL (vectors, structs, string parsing)
-- Dry-run mindset for debugging and clarity
-- Hinglish-style modular breakdowns 😉
+---
 
-## 🙌 Author
+## 🧪 Sample Tick Format
 
-**Saksham Verma**  
-Modular builder | Signal thinker | Strategy explorer  
-Connect on [LinkedIn](https://www.linkedin.com/in/saksham-verma-302271285/) | Showcase your streaks 💥
+Symbol: TCS 
+Quantity: 100 
+Price: 3200.50 
+Event: TRADE 
+Time: 14:23:56.123
 
-## 📌 Future Plans
 
-- Add support for multiple strategies
-- Real-time feed integration
-- Signal backtesting module
+---
+
+## 🧠 Real-World Mapping
+
+| Feature | Real Exchange Role |
+|---------|---------------------|
+| Tick Struct | Market data feed snapshot |
+| Timestamp | Audit trail + latency tracking |
+| Filtering | Analytics + dashboards |
+| Summary | Risk engine + reporting |
+| Latest Tick | Live feed monitoring |
+
+---
+
+## 🚀 How to Run
+
+1. Compile the code using any C++17 compatible compiler  
+2. Run the executable  
+3. Enter tick data as prompted  
+4. Use filters and view summaries
+
+---
+
+## 🤖 Built with AI Mentorship
+
+This project was built with guidance from Microsoft Copilot — logic validation, timestamp formatting, and modular breakdown were done collaboratively. Code is beginner-friendly and mapped to real-world infra.
+
+---
+
+## 🧠 Why This Project Matters
+
+- Helps understand how exchanges store and analyze live data  
+- Shows modular thinking and timestamp literacy  
+- Perfect for showcasing infra-grade builder mindset  
+- Recruiter-ready and easy to explain in interviews
+
+---
+
+## 🙋‍♂️ About Me
+
+Built by [Saksham Verma](https://www.linkedin.com/in/saksham-verma-302271285/)   
+Focused on modular C++ projects, timestamp precision, and real-world trading simulations.
+
