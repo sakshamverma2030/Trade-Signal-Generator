@@ -1,6 +1,6 @@
 # 🧠 Mini Tick Database Simulator
 
-A beginner-friendly C++ project that simulates how exchanges store and analyze market data in real time. This system captures ticks with timestamp, filters by symbol and event type, and generates summaries — just like real infra-grade systems.
+A beginner-friendly C++ project that simulates how exchanges store and analyze market data in real time. This system captures ticks with timestamps, filters by symbol and event type, and generates summaries — just like real infra-grade systems.
 
 ---
 
@@ -16,25 +16,21 @@ This project is inspired by real-world trading infrastructure. It mimics a **tic
 
 ---
 
-## 📅 Day-wise Breakdown
+## 🧩 Key Features
 
-| Day | Module | Description |
-|-----|--------|-------------|
-| Day 1 | Tick Struct + Timestamp | Tick data structure with formatted time |
-| Day 2 | Input + Storage | User se tick input lena and vector mein store karna |
-| Day 3 | Filter by Symbol | Specific symbol ke ticks dikhana |
-| Day 4 | Filter by Event Type | ORDER / TRADE / CANCEL ke hisaab se filter karna |
-| Day 5 | Event Summary | Total ORDER, TRADE, CANCEL count |
-| Day 6 | Highest Trade per Symbol | Har symbol ka highest price trade dikhana |
-| Day 7 | Latest Tick per Symbol | Har symbol ka latest tick timestamp ke basis pe dikhana |
+- **Tick Capture**: Stores each market event with symbol, price, quantity, type, and timestamp  
+- **Filtering**: View ticks by symbol or by event type (ORDER / TRADE / CANCEL)  
+- **Event Summary**: Shows total count of each event type  
+- **Highest Trade Tracker**: Displays highest price trade for each symbol  
+- **Latest Tick Tracker**: Tracks the most recent tick per symbol based on timestamp — simulating live feed freshness
 
 ---
 
-## 🧪 Sample Tick Format
 
+## 🧪 Sample Tick Format
 Symbol: TCS 
-Quantity: 100 
-Price: 3200.50 
+Quantity: 
+100 Price: 3200.50 
 Event: TRADE 
 Time: 14:23:56.123
 
@@ -64,7 +60,7 @@ Time: 14:23:56.123
 
 ## 🤖 Built with AI Mentorship
 
-This project was built with guidance from Microsoft Copilot — logic validation, timestamp formatting, and modular breakdown were done collaboratively. Code is beginner-friendly and mapped to real-world infra.
+I used Microsoft Copilot as a mentor — not a coder. It helped me validate logic, structure modules clearly, and simulate real-world scenarios. I never followed anything blindly. Every suggestion was reviewed, modified, and tested. The final code is fully mine and beginner-friendly, inspired by actual trading infrastructure.
 
 ---
 
@@ -79,6 +75,7 @@ This project was built with guidance from Microsoft Copilot — logic validation
 
 ## 🙋‍♂️ About Me
 
-Built by [Saksham Verma](https://www.linkedin.com/in/saksham-verma-302271285/)   
+Built by [Saksham Verma](https://www.linkedin.com/in/saksham-verma-302271285/)  
 Focused on modular C++ projects, timestamp precision, and real-world trading simulations.
+
 
