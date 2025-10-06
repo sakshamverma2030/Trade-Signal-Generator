@@ -21,15 +21,25 @@ A modular C++ tool to generate Buy/Sell signals from market price data using str
 ## 📂 Folder Structure
 TradeSignalGenerator/
 ├── main.cpp
+
 ├── price_parser.h
+
 ├── price_parser.cpp
+
 ├── strategy_engine.h
+
 ├── strategy_engine.cpp
+
 ├── signal_generator.h
+
 ├── signal_generator.cpp
+
 ├── metrics.h
+
 ├── metrics.cpp
+
 ├── sample_feed.txt
+
 ├── README.md ✅
 
 
