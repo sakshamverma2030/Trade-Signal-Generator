@@ -19,18 +19,14 @@ A modular C++ tool to generate Buy/Sell signals from market price data using str
 | `CLIOutput` | Displays results in dry-run style |
 
 ## 📂 Folder Structure
-TradeSignalGenerator/
+trade_signal_generator/
 ├── main.cpp
-├── price_parser.h
-├── price_parser.cpp
-├── strategy_engine.h
-├── strategy_engine.cpp
-├── signal_generator.h
-├── signal_generator.cpp
-├── metrics.h
-├── metrics.cpp
-├── sample_feed.txt
-├── README.md ✅
+├── price_parser.h / .cpp
+├── strategy_engine.h / .cpp
+├── signal_generator.h / .cpp
+├── metrics.h / .cpp
+├── README.md
+
 
 ## 📥 Input Format
 2025-10-05 14:15:00, 150.25
