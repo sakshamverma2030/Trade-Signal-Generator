@@ -46,15 +46,22 @@ TradeSignalGenerator/
 
 
 ## 📥 Input Format
+
 2025-10-05 14:15:00, 150.25
+
 2025-10-05 14:16:00, 151.00 
+
 ...
 ## 📤 Sample Output
+
 [BUY] 2025-10-05 14:16:00 @ ₹151.00
+
 [SELL] 2025-10-05 14:45:00 @ ₹153.50
 
 Total Signals: 12 
+
 Accuracy: 75% 
+
 Win Ratio: 3:1
 
 ## 🛠️ How to Run
