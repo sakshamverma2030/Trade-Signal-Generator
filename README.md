@@ -28,10 +28,15 @@ This project is inspired by real-world trading infrastructure. It mimics a **tic
 
 
 ## 🧪 Sample Tick Format
+
 Symbol: TCS 
+
 Quantity: 
+
 100 Price: 3200.50 
+
 Event: TRADE 
+
 Time: 14:23:56.123
 
 
