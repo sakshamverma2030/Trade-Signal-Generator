@@ -1,10 +1,10 @@
-# 🧠 Mini Tick Database Simulator
+#  Mini Tick Database Simulator
 
 A beginner-friendly C++ project that simulates how exchanges store and analyze market data in real time. This system captures ticks with timestamps, filters by symbol and event type, and generates summaries — just like real infra-grade systems.
 
 ---
 
-## 📌 Project Overview
+##  Project Overview
 
 This project is inspired by real-world trading infrastructure. It mimics a **tick database** — a system that stores every market event like orders, trades, and cancellations. Each tick includes:
 
@@ -16,7 +16,7 @@ This project is inspired by real-world trading infrastructure. It mimics a **tic
 
 ---
 
-## 🧩 Key Features
+##  Key Features
 
 - **Tick Capture**: Stores each market event with symbol, price, quantity, type, and timestamp  
 - **Filtering**: View ticks by symbol or by event type (ORDER / TRADE / CANCEL)  
@@ -27,7 +27,7 @@ This project is inspired by real-world trading infrastructure. It mimics a **tic
 ---
 
 
-## 🧪 Sample Tick Format
+##  Sample Tick Format
 
 Symbol: TCS 
 
@@ -42,7 +42,7 @@ Time: 14:23:56.123
 
 ---
 
-## 🧠 Real-World Mapping
+##  Real-World Mapping
 
 | Feature | Real Exchange Role |
 |---------|---------------------|
@@ -54,7 +54,7 @@ Time: 14:23:56.123
 
 ---
 
-## 🚀 How to Run
+##  How to Run
 
 1. Compile the code using any C++17 compatible compiler  
 2. Run the executable  
@@ -63,13 +63,13 @@ Time: 14:23:56.123
 
 ---
 
-## 🤖 Built with AI Mentorship
+##  Built with AI Mentorship
 
 I used Microsoft Copilot as a mentor — not a coder. It helped me validate logic, structure modules clearly, and simulate real-world scenarios. I never followed anything blindly. Every suggestion was reviewed, modified, and tested. The final code is fully mine and beginner-friendly, inspired by actual trading infrastructure.
 
 ---
 
-## 🧠 Why This Project Matters
+##  Why This Project Matters
 
 - Helps understand how exchanges store and analyze live data  
 - Shows modular thinking and timestamp literacy  
@@ -78,7 +78,7 @@ I used Microsoft Copilot as a mentor — not a coder. It helped me validate logi
 
 ---
 
-## 🙋‍♂️ About Me
+##  About Me
 
 Built by [Saksham Verma](https://www.linkedin.com/in/saksham-verma-302271285/)  
 Focused on modular C++ projects, timestamp precision, and real-world trading simulations.
